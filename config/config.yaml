@@ -1,0 +1,2 @@
+[logging]
+  config: '/etc/shuffledice/logging.conf'
