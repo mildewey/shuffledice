@@ -1,6 +1,7 @@
 import os
 import sys
 import logging
+import logging.config
 import yaml
 
 def init():
@@ -30,6 +31,6 @@ def init():
     )
 
     if os.path.exists(log_conf_file):
-        logging.fileConfig(log_conf_file)
+        logging.config.fileConfig(log_conf_file)
     else:
         logging.basicConfig(stream=sys.stdout, level=logging.INFO)
